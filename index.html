@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <link rel="shortcut icon" href="img/2.png" type="image/x-icon">
+
+<link rel="stylesheet" href="css js/bootstrap.min.css">
+    
+<style>
+    *{margin: 0 , auto;padding: 0;}
+    body{height: auto;margin: 0;padding: 0; background-color: snow;}
+    #heading1>#div1{color: rgba(0, 0, 0, 0.722); text-align: center;font-size: 30px;font-family: system-ui;z-index: 99;}
+    #heading1>#div2{color: rgba(152, 19, 152, 0.726); text-align: center; font-size: 15px;font-family: 'Trebuchet MS';}
+    .box{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;margin-top: 100px; z-index: 99;}
+    #btn1{background-color: rgba(255, 192, 203, 0.803);}
+    #btn2{background-color: powderblue;}
+    #btn3{background-color: aquamarine;}
+    #btn4{background-color: rgba(102, 205, 171, 0.745);}
+    #btn5{background-color: rgba(242, 232, 217, 0.57);}
+    #btn6{background-color: aqua;}
+    #btn7{background-color: skyblue;}
+    #btn8{background-color: cadetblue;}
+    .btn{height: 60px;width:60px;border-radius:100px;display:block;text-align:center;border:1px solid white;}
+    .btn:hover{cursor: pointer;transform: scale(1.1,1.1);}   
+    .maining{margin-top: 0px;}
+    .maining>img{width:"1519px"; object-fit: cover;}
+    .lastimg{position: absolute;bottom: 0;left: 0;}
+    </style>
+    
+
+
+
+</head>
+<body>
+    <div class="heading" id="heading1"><div id="div1"><h1>Color Changer</h1></div><div id="div2">click on button to change background color</span></div>
+
+<div class="box">
+    <span class="btn"id="btn1" onclick="btn1()"></span>
+    <span class="btn"id="btn2" onclick="btn2()"></span>
+    <span class="btn"id="btn3" onclick="btn3()"></span>
+    <!-- <span class="btn"id="btn4" onclick="btn4()"></span> -->
+    <span class="btn"id="btn5" onclick="btn5()"></span>
+    <span class="btn"id="btn6" onclick="btn6()"></span>
+    <span class="btn"id="btn7" onclick="btn7()"></span>
+    <!-- <span class="btn"id="btn8" onclick="btn8()"></span> -->
+</div>
+
+<marquee behavior="" direction="right" style="z-index: 10; position:relative; top: -385px;"><img src="img/2.png" width="400px" height="200px" alt="cloud1"><img src="img/2.png" width="400px" height="200px" alt="cloud1" style="margin-left: 1300px;"></marquee> 
+
+
+<div class="container-fluid lastimg  ms-0 me-0 ps-0 pe-0 pb-0 mb-0">
+
+    <div class="maining row ms-0 me-0 ps-0 pe-0 pb-0 mb-0">
+        <img class="imf-fluid img-fluid ms-0 me-0 ps-0 pe-0 pb-0 mb-0 " src="img/0.png" width="1519px" alt="maining" >
+        
+        
+    </div>
+</div>
+
+<script src="css js/bootstrap.min.js"></script>
+<script>
+    
+    const btn1=()=>{
+    
+    let  body = document.querySelector("body");
+    body.style.backgroundColor="rgba(255, 192, 203, 0.803)";
+    
+    }
+    const btn2=()=>{
+    
+     let  body = document.querySelector("body");
+     body.style.backgroundColor="powderblue";
+     
+    }
+    const btn3=()=>{
+    
+     let  body = document.querySelector("body");
+     body.style.backgroundColor="aquamarine";
+     
+    }
+    const btn4=()=>{
+    
+     let  body = document.querySelector("body");
+     body.style.backgroundColor="rgba(102, 205, 171, 0.745)";
+    
+    }
+    
+    const btn5=()=>{
+    
+    let  body = document.querySelector("body");
+    body.style.backgroundColor="rgba(242, 232, 217, 0.57)";
+    
+    }
+    const btn6=()=>{
+    
+    let  body = document.querySelector("body");
+    body.style.backgroundColor="aqua";
+    
+    }
+    const btn7=()=>{
+    
+    let  body = document.querySelector("body");
+    body.style.backgroundColor="skyblue";
+    
+    }
+    const btn8=()=>{
+    
+    let  body = document.querySelector("body");
+    body.style.backgroundColor="cadetblue";
+    
+    }
+    </script>
+    
+    
+</body>
+</html>
